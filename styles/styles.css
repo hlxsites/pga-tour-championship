@@ -728,3 +728,13 @@ main .section.teaser .teaser-play::before {
 .icon.icon-close::after {
   transform: rotate(-45deg)
 }
+
+/* author centered headlines w/ bold */
+.default-content-wrapper h2 > strong {
+  display: block;
+  text-align: center;
+}
+
+.default-content-wrapper strong > h2 {
+  text-align: center;
+}
