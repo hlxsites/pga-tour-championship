@@ -29,7 +29,7 @@ main .blockquote blockquote q {
 
 main .blockquote.bordered blockquote p {
   text-align: right;
-  font-size: var(--body-font-size-s);
+  font-size: var(--body-font-size-xs);
   color:var(--blockquote-text-color);
 }
 
@@ -40,5 +40,9 @@ main .blockquote.bordered blockquote p {
 
   main .blockquote.bordered blockquote {
     font-size: var(--body-font-size-xxl);
+  }
+
+  main .blockquote.bordered blockquote p {
+    font-size: var(--body-font-size-s);
   }
 }
