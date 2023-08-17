@@ -86,7 +86,7 @@ main .video-hero-play::before {
     height: 80px;
     margin-top: 16px;
   }
-  
+
   main .video-hero-play::before {
     margin-left: 5px;
     border-top: 20px solid transparent;

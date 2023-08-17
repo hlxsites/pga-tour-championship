@@ -27,6 +27,8 @@ function loadFranklinVideo(videoHref, block) {
   block.innerHTML = `<video controls>
     <source src="${videoHref}" type="video/${videoHref.split('.').pop()}" >
   </video>`;
+
+  block.setAttribute('data-video-status', 'loaded');
 }
 
 function loadBrightcoveVideo(id, block) {

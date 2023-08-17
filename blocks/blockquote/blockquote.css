@@ -19,6 +19,7 @@ main .blockquote.bordered blockquote {
   font-weight: bold;
   border-top: solid var(--color-black) 1px;
   border-bottom: solid var(--color-black) 1px;
+
   --blockquote-text-color: var(--color-black);
 }
 
