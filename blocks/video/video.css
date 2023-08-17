@@ -21,7 +21,7 @@ main .video .video-iframe-wrapper iframe {
 
 /* franklin videos, so not bc iframed */
 main .video video {
-  max-width: 100%;
+  width: 100%;
 }
 
 /* hero video */
