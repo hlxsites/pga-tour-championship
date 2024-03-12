@@ -1059,7 +1059,7 @@ function loadPageScripts() {
   const chatBot = getMetadata('chatbot');
   if (chatBot) {
     if (chatBot.toUpperCase() === 'TICKETS') {
-      loadScript('https://chat.satis.fi/popup/embedder?popupId=18596', {
+      loadScript('https://chat.satis.fi/popup/embedder?popupId=18596', () => {}, {
         id: 'satisfiScript',
       });
     } else if (chatBot.toUpperCase() === 'GENERAL') {
