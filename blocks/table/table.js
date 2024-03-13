@@ -143,9 +143,6 @@ async function getStatDetails(config) {
     // eslint-disable-next-line no-console
     console.warn('Could not retrieve Stat Details', err);
   }
-
-  // return an empty array if fail, so that local news can still be displayed
-  return [];
 }
 
 export default async function decorate(block) {
