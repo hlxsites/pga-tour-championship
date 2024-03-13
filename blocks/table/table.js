@@ -143,6 +143,7 @@ async function getStatDetails(config) {
     // eslint-disable-next-line no-console
     console.warn('Could not retrieve Stat Details', err);
   }
+  return {};
 }
 
 export default async function decorate(block) {
