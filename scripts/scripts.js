@@ -1053,6 +1053,22 @@ async function loadEager(doc) {
 }
 
 /**
+ * Loads page/path specific scripts
+ */
+function loadPageScripts() {
+  const chatBot = getMetadata('chatbot');
+  if (chatBot) {
+    if (chatBot.toUpperCase() === 'TICKETS') {
+      loadScript('https://chat.satis.fi/popup/embedder?popupId=18596', () => {}, {
+        id: 'satisfiScript',
+      });
+    } else if (chatBot.toUpperCase() === 'GENERAL') {
+      // Alt Script Here
+    }
+  }
+}
+
+/**
  * loads everything that doesn't need to be delayed.
  */
 async function loadLazy(doc) {
@@ -1069,6 +1085,8 @@ async function loadLazy(doc) {
   addFavIcon(`${window.hlx.codeBasePath}/styles/favicon.ico`);
 
   doc.querySelectorAll('div:not([class]):not([id]):empty').forEach((empty) => empty.remove());
+
+  loadPageScripts();
 }
 
 /**
